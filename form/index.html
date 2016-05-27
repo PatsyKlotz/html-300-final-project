@@ -1,0 +1,121 @@
+<!doctype html>
+<html>
+	<head>
+      <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+  <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+  <script>
+  $(function() {
+    $( "#datepicker" ).datepicker();
+  });
+  </script>
+ <!-- jQuery CDN link....  
+        <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	 -->
+		<meta charset="UTF-8">	
+		<title>HTML5: Week One</title>  
+		<!-- link to an external style sheet (best practice with style sheet)-->
+		<link href="css/styles.css" rel="stylesheet" type="text/css" />
+	</head>
+	<body class="page"><!-- everything that is visual goes in the body tag  -->
+      <header>
+          <!-- the "banner" area or title of the page-->
+          <h1>HTML5: Week One</h1> <!-- only h1 per page (for SEO purposes) --> 	
+      </header>
+      <nav class="nav1"> 
+          <ul>
+              <!-- these links are relative paths -->
+              <li> <a href="#">home</a></li>
+              <li> <a href="#">gallery</a></li>
+              <li> <a href="sign-up.html">Sign Up Here</a></li>
+              <li> <a href="#">Mobile Site</a></li>
+              <li> <a href="http://www.google.com">Google</a></li>
+          </ul>
+      </nav>
+      <div id="mainContent">
+        <h2>Summer Pool USA</h3>
+          <!-- A Simple Form    -->
+        <h3>2016 Swim Lessons Registration Form</h3>
+          <p>If you would like to register for swim lessons, please complete the following form and press Submit. Thank you!</p>
+        <form id="sign-up-form" method="post" action="#" autocomplete="on">
+          <fieldset>
+            <h2>Please tell us about your swimmer:</h2>
+              <ul>
+                <li>
+                  <label id="f-name-label">First Name:</label>
+                  <input type="text" name="first-name" id="f-name-label" placeholder="First Name" required>
+                </li>
+                <li>
+                  <label id="l-name-label">Last Name:</label>
+                  <input type="text" name="last-name" id="l-name-label" placeholder="Last Name">
+                </li>
+                <li>
+                  <input type="radio" name="gender" value="male">Male<br>
+                  <input type="radio" name="gender" value="female">Female<br>
+                </li>
+                <li>
+                  <label id="age-label">Age:</label>
+                  <select name="age-groups">
+                    <option value="4 to 5">4 to 5 years</option>
+                    <option value="6 to 7">6 to 7 years</option>
+                    <option value="8 to 9">8 to 9 years</option>
+                    <option value="10 to 12">10 to 12 years</option>
+                  </select>
+                </li>
+                <li>
+                  <label id="bday">Birthday:</label>
+                  <input type="date" name="bday" placeholder="01/01/00">
+                </li>
+                <li>
+                  <label id="yrs-of-exper">Years of Experience:</label>
+                  <input type="number" name="quantity" min="0" max="6" required>
+                </li>
+                <li>
+                  <label id="parent-f-name-label">Parent First Name:</label>
+                  <input type="text" name="parent-f-name" id="parent-f-name-label" placeholder="John">
+                </li>
+                <li>
+                  <label id="parent-l-name-label">Parent Last Name:</label>
+                  <input type="text" name="last-name" id="parent-l-name-label" placeholder="Smith">
+                </li>
+                <li>
+                  <label id="address">Address:</label>
+                  <input type="text" name="address" id="address" placeholder="Address">
+                </li>
+                <li>
+                  <label>Zip Code:</label>
+                  <input type="text" placeholder="90210" pattern="^[0-9]{5}" required/>
+                </li>
+                <li>
+                  <label id="phone-number">Home Phone Number:</label>
+                  <input type="tel" name="phone-number" id="phone-number" placeholder="555-123-0000">
+                </li>
+                <li>
+                  <label id="cell-phone-number">Cell Phone Number:</label>
+                  <input type="tel" name="cell-phone-number" id="cell-phone-number" placeholder="555-111-0000"required>
+                </li>
+                <li>
+                  <label>E-mail Address:</label>
+                  <input type="email" name="email" placeholder="john.smith@me.com"/>
+                </li>
+                <li>
+                  <label>Work E-mail Address:</label>
+                  <input type="email" name="email" placeholder="john.smith@inc.com">
+                </li>
+                <li>
+                  <label id="contact">May We Contact You at Work?</label>
+                  <input type="checkbox" name="contact" value="Yes">Yes
+                  <input type="checkbox" name="contact" value="No">No
+                </li>
+              </ul>
+                <input type="submit" value="Submit Form" name="submit"/>
+          </fieldset>
+        </form> 
+      </div><!-- closing maincContent div tag -->
+
+      <!--  This is the footer section, only footer stuff -->
+    <footer>
+      <p>&copy; Copyright 2016, CSS by Jason Zeringue </p>
+    </footer>
+  </body>
+</html>
