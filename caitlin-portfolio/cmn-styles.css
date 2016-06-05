@@ -1,0 +1,63 @@
+.container {
+  overflow:hidden; 
+}
+html, body {
+      height: 100%;
+      text-align: center;
+    }
+body {
+  font-family: 'Tangerine', serif;
+  font-size: 48px;
+  text-shadow: 4px 4px 4px #aaa;
+  margin: 0;
+  padding: 0;
+  background: #EEE;
+}
+
+.box {
+    width: 25%;
+    padding-bottom: 25%;
+    background: #A0D0F3;
+    color: #FFF;
+    position: relative;
+    margin: 5px 5px 5px 5px;
+    float: left;
+    }
+ 
+.inside-box {
+   position: absolute;
+   left: 5px;
+   right: 5px;
+   top: 5px;
+   bottom: 5px;
+   background: #B294F2;
+}
+
+  @media only screen and (max-width : 480px) {
+   /* Smartphone */
+   .box {
+      width: 100%;
+      padding-bottom: 100%;
+   }
+}
+@media only screen and (max-width : 650px) and (min-width : 481px) {
+   /* Tablet view*/
+   .box {
+      width: 50%;
+      padding-bottom: 50%;
+   }
+}
+@media only screen and (max-width : 1050px) and (min-width : 651px) {
+   /* Small desktop*/
+   .box {
+      width: 33.3%;
+      padding-bottom: 33.3%;
+   }
+}
+@media only screen and (max-width : 1290px) and (min-width : 1051px) {
+   /* Medium desktop */
+   .box {
+      width: 25%;
+      padding-bottom: 25%;
+   }
+}
