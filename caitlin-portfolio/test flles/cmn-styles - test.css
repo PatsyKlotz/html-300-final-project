@@ -1,11 +1,11 @@
 .container {
   overflow:hidden;
-  display: -webkit-flex;
+  /*display: -webkit-flex;
     display: flex;
     -webkit-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -webkit-justify-content: center;
-    justify-content: center;
+    flex-wrap: wrap;*/
+   /* -webkit-align-content: center;
+    align-content: center;*/
 }
 
 html, body {
