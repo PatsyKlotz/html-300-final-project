@@ -48,15 +48,14 @@ header {
 }
 .button {
   display: block;
-    height: 5%;
+    line-height: 2em;
+    border-radius: 5px;
     width: 10%;
     background:#D2D3D9;
     text-align: center;
-    padding-right: .80%;
-    padding-bottom: .40%;
-    padding-left: .80%;
-    padding-top: .40%;
+    padding: 0 .5rem;
     font: 12px;
+    margin: 1em, .75em;
 }
 [class*="col-"] {
     float: left;
